@@ -7,7 +7,7 @@
 .footer_primary {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .company ul,
 .Caso ul,
@@ -23,6 +23,7 @@
 .Resources ul li {
   padding: 0 !important;
   line-height: 25px;
+  font-size: 12px;
 }
 .solutions h3,
 .company h3,
@@ -44,8 +45,15 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .policy p {
   padding-left: 40px;
+}
+.policy ul {
+  padding-left: 40px;
+  padding-right: 10px;
+  width: 80%;
+  justify-content: space-between;
 }
 .social {
   font-size: 40px;
@@ -76,5 +84,31 @@ a {
   }
   .policy p {
     padding-left: 10px;
+  }
+  .logo_div {
+    padding-left: 45px !important;
+  }
+  .company ul,
+  .Caso ul,
+  .Resources ul,
+  .solutions ul {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-bottom: 10px;
+  }
+  .solutions h3,
+  .company h3,
+  .Caso h3,
+  .Resources h3 {
+    padding: 20px 20px 0px 0px;
+  }
+  .solutions h4,
+  .company h4,
+  .Caso h4,
+  .Resources h4 {
+    padding: 10px 20px 10px 0px;
+  }
+  .policy ul {
+    width: 100%;
   }
 }
