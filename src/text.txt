@@ -1,0 +1,14 @@
+const data = useStaticQuery(graphql`
+    query Images {
+      image: allFile(filter: { relativeDirectory: { eq: "index" } }) {
+        nodes {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)

@@ -1,0 +1,33 @@
+.main_third {
+  background: rgb(244, 248, 249);
+  display: flex;
+  padding: 5rem 5rem 5rem 10rem;
+}
+.image_wrapper {
+  width: 130rem;
+  padding-top: 15px;
+  padding-right: 10rem;
+}
+hr {
+  height: 5px;
+  background: #006ec7;
+  border: none;
+  width: 100px;
+}
+.content_wrapper p {
+  padding: 15px 0px 15px 0px;
+}
+@media screen and (max-width: 768px) {
+  .main_third {
+    padding: 5rem 2rem 5rem 2rem;
+    flex-direction: column;
+  }
+  .image_wrapper {
+    width: 100%;
+    justify-content: center !important;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+}

@@ -1,0 +1,30 @@
+.main_second {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5rem 5rem 10rem;
+}
+.descubre {
+  width: 140px;
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: white;
+  background: #006ec7;
+  border: none;
+}
+.descubre:hover {
+  background: white;
+  color: #006ec7;
+  border: 2px solid #006ec7;
+}
+.descubre:focus {
+  outline: none;
+}
+.main_second h1,
+.main_second p {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .main_second {
+    padding-left: 2rem;
+  }
+}

@@ -1,0 +1,49 @@
+.background {
+  min-height: 100vh;
+  background-size: cover !important;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.background:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(0, 110, 199, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.header_div {
+  position: relative;
+  z-index: 1000;
+}
+.main {
+  display: flex;
+}
+
+.text {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 10rem;
+  z-index: 1000;
+  width: 40%;
+  color: white;
+}
+.text h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.text p {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .text {
+    padding: 2rem;
+    width: 100%;
+  }
+}

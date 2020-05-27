@@ -1,0 +1,80 @@
+.footer {
+  background: #006ec7;
+  bottom: 0;
+  color: white;
+  padding: 40px;
+}
+.footer_primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.company ul,
+.Caso ul,
+.Resources ul,
+.solutions ul {
+  display: flex !important;
+  flex-direction: column !important;
+  padding-bottom: 50px;
+}
+.solutions ul li,
+.company ul li,
+.Caso ul li,
+.Resources ul li {
+  padding: 0 !important;
+  line-height: 25px;
+}
+.solutions h3,
+.company h3,
+.Caso h3,
+.Resources h3 {
+  padding: 20px 20px 20px 0px;
+}
+.solutions {
+  flex-basis: 200px;
+}
+.solutions h4,
+.company h4,
+.Caso h4,
+.Resources h4 {
+  padding: 20px 20px 20px 0px;
+}
+.footer_secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.policy p {
+  padding-left: 40px;
+}
+.social {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  padding: 40px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .footer_primary,
+  .footer_secondary {
+    flex-direction: column;
+  }
+  .solutions ul li,
+  .company ul li,
+  .Caso ul li,
+  .Resources ul li {
+    text-align: left;
+    padding-left: 50px !important;
+  }
+  .policy ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .policy p {
+    padding-left: 10px;
+  }
+}
