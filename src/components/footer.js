@@ -99,7 +99,7 @@ const Footer = () => {
         <div className="policy">
           <ul>
             <li>
-              <Link to="/avios-legal">
+              <Link to="/aviso-legal">
                 <b>Avios Legal</b>
               </Link>
             </li>
