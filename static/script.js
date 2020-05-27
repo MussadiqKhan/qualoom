@@ -2,7 +2,7 @@ var el = document.getElementById("menu")
 console.log("hi1")
 
 if (el) {
-  document.getElementById("menu").addEventListener("click", addClass)
+  el.addEventListener("click", addClass)
   console.log("hi")
 }
 
