@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "../styles/header.css"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { Helmet } from "react-helmet"
@@ -6,6 +6,13 @@ import { withPrefix, Link } from "gatsby"
 import logo from "../../static/images/logo_qualoom_blanco.png"
 
 const Header = () => {
+  const [drop, setDrop] = useState(false)
+
+  const onClick = () => {
+    console.log("onClick")
+    setDrop(!drop)
+    console.log(drop)
+  }
   return (
     <div className="header">
       <nav>
@@ -14,11 +21,11 @@ const Header = () => {
             <img src={logo} />
           </div>
           <div className="menu" id="menu">
-            <GiHamburgerMenu />
+            <GiHamburgerMenu onClick={onClick} />
           </div>
         </div>
 
-        <ul id="UL">
+        <ul id="UL" className={drop ? "active" : ""}>
           <div className="logo_large">
             <img src={logo} />
           </div>
@@ -27,14 +34,12 @@ const Header = () => {
           <li>Bigdata & Analytics</li>
           <li>Desarrollo software</li>
           <li>Empleo</li>
-
+          <li>Compañía</li>
+          <li>Actualidad</li>
           <li>IoT & Robótica software</li>
           <li>Offering!</li>
         </ul>
       </nav>
-      <Helmet>
-        <script src={withPrefix("script.js")} type="text/javascript" />
-      </Helmet>
     </div>
   )
 }
