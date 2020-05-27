@@ -8,9 +8,6 @@ import logo from "../../static/images/logo_qualoom_blanco.png"
 const Header = () => {
   return (
     <div className="header">
-      <Helmet>
-        <script src={withPrefix("script.js")} type="text/javascript" />
-      </Helmet>
       <nav>
         <div className="toggle">
           <div className="logo">
@@ -35,6 +32,9 @@ const Header = () => {
           <li>Offering!</li>
         </ul>
       </nav>
+      <Helmet>
+        <script src={withPrefix("script.js")} type="text/javascript" />
+      </Helmet>
     </div>
   )
 }
