@@ -13,13 +13,14 @@ const Empleo = () => {
           id
           childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
             }
           }
         }
       }
     }
   `)
+  console.log(data.image.nodes[0].childImageSharp.fluid)
   return (
     <div>
       <div
@@ -46,18 +47,28 @@ const Empleo = () => {
           </div>
         </div>
       </div>
-      <div className="empleo-content">
-        <div className="empleo-text">
-          <h2>Perfil Junior Administración de sistemas Línux y BigData</h2>
-          <p>
-            Qualoom busca incorporar a su equipo perfiles con o sin experiencia
-            técnica en ecosistemas Linux y Big Data, tecnologías Spark y Scala
-            con ganas de aprender y capacidad de desarrollar su carrera en una
-            empresa estable y puntura en nuevas tecnologías.
-          </p>
-          <button className="oprtunidad">Ver oportunidad</button>
+      <div className="casos-content-main">
+        <div className="casos-content">
+          <div className="casos-logo">
+            <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
+          </div>
+
+          <div className="casos-text">
+            <p style={{ marginBottom: "20px" }}>
+              Qualoom ha sido el partner español de Amazon Web Services (AWS)
+              seleccionado por Fleurop Interflora España S.A. para realizar la
+              migración de su infraestructura a la nube y dar soporte continuado
+              una vez en producción. Interflora es el líder en el negocio de la
+              gestión de encargos florales y plantas naturales en España y una
+              de las divisiones más significativas de la red global de Fleurop
+              Inc.
+            </p>
+            <button className="descubre">Descubre más</button>
+          </div>
         </div>
-        <div className="empleo-image"></div>
+        <div className="casos-image">
+          <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+        </div>
       </div>
       <Footer />
     </div>
