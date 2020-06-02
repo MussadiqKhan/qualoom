@@ -33,7 +33,9 @@ const Header = () => {
           <li>Servicios Cloud</li>
           <li>Bigdata & Analytics</li>
           <li>Desarrollo software</li>
-          <li>Empleo</li>
+          <Link to="/empleo">
+            <li>Empleo</li>
+          </Link>
           <li>Compañía</li>
           <li>Actualidad</li>
           <li>IoT & Robótica software</li>

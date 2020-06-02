@@ -28,7 +28,8 @@ ul li {
   font-size: 14px;
 }
 ul li:hover {
-  color: grey;
+  color: cornsilk;
+  cursor: pointer;
 }
 .toggle {
   width: 100%;

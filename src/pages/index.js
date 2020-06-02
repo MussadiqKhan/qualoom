@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
 import IndexFirstSection from "../components/index/index_first_section"
 import IndexSecondSection from "../components/index/index_second_section"

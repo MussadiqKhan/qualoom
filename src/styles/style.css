@@ -1,0 +1,75 @@
+/* Empleo page css */
+
+.background-empleo {
+  min-height: 95vh;
+  background-size: cover !important;
+  background-position: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-empleo:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: #228b22;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.empleo-content {
+  margin: 10rem;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.empleo-text {
+  width: 45rem;
+}
+.empleo-image {
+  width: 100px;
+  margin-bottom: 2rem;
+}
+.empleo-text h2 {
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.empleo-text p {
+  margin-bottom: 1rem;
+}
+.oprtunidad {
+  width: 140px;
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: white;
+  background: #228b22;
+  border: none;
+}
+.oprtunidad:hover {
+  background: white;
+  color: #228b22;
+  border: 2px solid #228b22;
+}
+
+/* Casos De Exito css */
+
+.background-casos {
+  min-height: 95vh;
+  background-size: cover !important;
+  background-position: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-casos:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(92, 110, 1, 0.93);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}

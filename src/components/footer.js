@@ -90,7 +90,9 @@ const Footer = () => {
               <h3>Recursos</h3>
             </li>
             <li>Blog</li>
-            <li>Empleo</li>
+            <Link to="/empleo">
+              <li>Empleo</li>
+            </Link>
             <li>Actualidad</li>
           </ul>
         </div>

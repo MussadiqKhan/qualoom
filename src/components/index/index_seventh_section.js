@@ -16,7 +16,6 @@ const IndexSeventhSection = () => {
       }
     }
   `)
-  console.log(data)
   return (
     <div className="main_fourth">
       <div className="content_wrapper_right">

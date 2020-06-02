@@ -10,13 +10,13 @@ const IndexFourthSection = () => {
         id
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
     }
   `)
-  console.log(data)
+
   return (
     <div className="main_fourth">
       <div className="content_wrapper_right">
