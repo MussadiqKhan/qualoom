@@ -21,15 +21,15 @@
 .empleo-content {
   margin: 10rem;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .empleo-text {
-  width: 45rem;
+  word-wrap: break-word;
+  width: 56%;
 }
 .empleo-image {
-  width: 100px;
   margin-bottom: 2rem;
 }
 .empleo-text h2 {
@@ -90,7 +90,6 @@
 .casos-image {
   width: 50%;
   margin: 0 auto;
-  margin-left: 40px;
   align-self: center;
   justify-self: center;
 }
@@ -98,6 +97,75 @@
   width: 100%;
   height: 100%;
 }
+
+/* Desarrollo Software */
+.background-software {
+  max-height: 95vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-software:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(35, 45, 68, 0.85);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Bigdata */
+
+.background-bigdata {
+  max-height: 95vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-bigdata:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(136, 33, 14, 0.93);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.data-image {
+  width: 220px;
+}
+
+/* Robotica */
+
+.background-robotica {
+  max-height: 90vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-robotica:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(73, 70, 72, 0.93);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.robotica-image {
+  width: 150px;
+}
+
 @media screen and (max-width: 980px) {
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;
@@ -108,18 +176,43 @@
   .casos-content {
     display: flex;
     margin: 0rem 2rem 2rem 2rem;
-    flex-basis: 100%;
+    flex-basis: 100% !important;
     flex-direction: column;
+    width: 92%;
   }
+
   .casos-image {
     width: 100%;
     margin: 0 auto;
-    margin-left: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     align-self: center;
     justify-self: center;
   }
   .casos-image img {
     width: 100%;
     height: 100%;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 680px) {
+  .casos-content {
+    display: flex;
+    margin: 0rem 2rem 2rem 2rem;
+    flex-basis: 100% !important;
+    flex-direction: column;
+    width: 82%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .empleo-content {
+    margin: 2rem;
+    justify-content: center;
+  }
+  .empleo-text {
+    width: 100%;
   }
 }

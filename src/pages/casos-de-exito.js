@@ -66,8 +66,54 @@ const Empleo = () => {
             <button className="descubre">Descubre más</button>
           </div>
         </div>
-        <div className="casos-image">
+        <div className="casos-image" style={{ marginLeft: "50px" }}>
           <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+        </div>
+      </div>
+      <div className="casos-content-main reverse">
+        <div className="casos-image" style={{ marginRight: "50px" }}>
+          <Img fluid={data.image.nodes[5].childImageSharp.fluid} />
+        </div>
+        <div className="casos-content casos-content-mobile">
+          <div className="casos-logo">
+            <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
+          </div>
+
+          <div className="casos-text">
+            <p style={{ marginBottom: "20px" }}>
+              La Liga Fantasy, un fenómeno nacional e internacional al que se
+              suman cada día miles de usuarios con la posibilidad de diseñar sus
+              equipo y competir por ganar una de las ligas de futbol más
+              importantes del mundo. Nuestro reto, operar y administrar la
+              infraestructura 24x7x365 días al año con una disponibilidad del
+              99.99% a través de nuestro equipo de DevOps, SysOps en Amazon Web
+              Services.
+            </p>
+            <button className="descubre">Descubre más</button>
+          </div>
+        </div>
+      </div>
+      <div className="casos-content-main">
+        <div className="casos-content">
+          <div className="casos-logo">
+            <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
+          </div>
+
+          <div className="casos-text">
+            <p style={{ marginBottom: "20px" }}>
+              Qualoom ha sido el partner español de Amazon Web Services (AWS)
+              seleccionado por Fleurop Interflora España S.A. para realizar la
+              migración de su infraestructura a la nube y dar soporte continuado
+              una vez en producción. Interflora es el líder en el negocio de la
+              gestión de encargos florales y plantas naturales en España y una
+              de las divisiones más significativas de la red global de Fleurop
+              Inc.
+            </p>
+            <button className="descubre">Descubre más</button>
+          </div>
+        </div>
+        <div className="casos-image" style={{ marginLeft: "50px" }}>
+          <Img fluid={data.image.nodes[4].childImageSharp.fluid} />
         </div>
       </div>
       <Footer />

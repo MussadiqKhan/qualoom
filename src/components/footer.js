@@ -50,40 +50,51 @@ const Footer = () => {
             <li>IaaS & PaaS</li>
             <li>Cloud híbrida</li>
             <li>Migraciones onpremise</li>
-            <li>
-              <h4>BigData & Analytics</h4>
-            </li>
-            <li>Diseño e implementacion</li>
-            <li>BigData</li>
-            <li>Ingesta, procesamiento y análisis</li>
-            <li>Analisis avanzado de datos</li>
-            <li>Visualización de datos</li>
-            <li>
-              <h4>Desarrollo de Software</h4>
-            </li>
-            <li>Aplicaciones servidor, web y móviles</li>
-            <li>Proyectos llave en mano</li>
-            <li>Equipo de desarrollo ondemand</li>
-            <li>Optimización y mantenimiento</li>
-            <li>QA & CI/CD</li>
-            <li>
-              <h4>IoT y Robótica Software</h4>
-            </li>
-            <li>Soluciones IoT</li>
-            <li>Robótica Software</li>
-            <li>Bot's</li>
+            <Link to="/bigdata-analytics">
+              <li>
+                <h4>BigData & Analytics</h4>
+              </li>
+              <li>Diseño e implementacion</li>
+              <li>BigData</li>
+              <li>Ingesta, procesamiento y análisis</li>
+              <li>Analisis avanzado de datos</li>
+              <li>Visualización de datos</li>
+            </Link>
+            <Link to="/desarrollo-software">
+              <li>
+                <h4>Desarrollo de Software</h4>
+              </li>
+              <li>Aplicaciones servidor, web y móviles</li>
+              <li>Proyectos llave en mano</li>
+              <li>Equipo de desarrollo ondemand</li>
+              <li>Optimización y mantenimiento</li>
+              <li>QA & CI/CD</li>
+            </Link>
+            <Link to="/iot-robotica">
+              <li>
+                <h4>IoT y Robótica Software</h4>
+              </li>
+              <li>Soluciones IoT</li>
+              <br />
+              <li>Robótica Software</li>
+              <br />
+
+              <li>Bot's</li>
+            </Link>
           </ul>
         </div>
-        <div className="Caso">
-          <ul>
-            <li>
-              <h3>Casos de éxito</h3>
-            </li>
-            <li>Interflora La Liga</li>
-            <li>Profesional</li>
-            <li>Telefónica</li>
-          </ul>
-        </div>
+        <Link to="/casos-de-exito">
+          <div className="Caso">
+            <ul>
+              <li>
+                <h3>Casos de éxito</h3>
+              </li>
+              <li>Interflora La Liga</li>
+              <li>Profesional</li>
+              <li>Telefónica</li>
+            </ul>
+          </div>
+        </Link>
         <div className="Resources">
           <ul>
             <li>

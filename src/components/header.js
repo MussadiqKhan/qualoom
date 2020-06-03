@@ -31,14 +31,20 @@ const Header = () => {
           </div>
           <li>Consultoría IT</li>
           <li>Servicios Cloud</li>
-          <li>Bigdata & Analytics</li>
-          <li>Desarrollo software</li>
+          <Link to="/bigdata-analytics/">
+            <li>Bigdata & Analytics</li>
+          </Link>
+          <Link to="/desarrollo-software">
+            <li>Desarrollo software</li>
+          </Link>
           <Link to="/empleo">
             <li>Empleo</li>
           </Link>
           <li>Compañía</li>
           <li>Actualidad</li>
-          <li>IoT & Robótica software</li>
+          <Link to="/iot-robotica">
+            <li>IoT & Robótica software</li>
+          </Link>
           <li>Offering!</li>
         </ul>
       </nav>

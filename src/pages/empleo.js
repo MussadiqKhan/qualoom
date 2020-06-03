@@ -47,15 +47,22 @@ const Empleo = () => {
       </div>
       <div className="empleo-content">
         <div className="empleo-image">
-          <Img fluid={data.image.childImageSharp.fluid} />
+          <Img
+            fluid={data.image.childImageSharp.fluid}
+            className="data-image"
+          />
         </div>
         <div className="empleo-text">
           <h2>Perfil Junior Administración de sistemas Línux y BigData</h2>
           <p>
-            Qualoom busca incorporar a su equipo perfiles con o sin experiencia
-            técnica en ecosistemas Linux y Big Data, tecnologías Spark y Scala
-            con ganas de aprender y capacidad de desarrollar su carrera en una
-            empresa estable y puntura en nuevas tecnologías.
+            Con una de las infraestructuras Big data más importantes para el
+            análisis de datos, Qualoom se ha convertido en el equipo de
+            administración y operaciones que permite la explotación de tan
+            exigente y dinámica infraestructura. Con tecnología Hadoop,
+            proyectos de explotación de datos e integración con múltiples
+            aplicaciones de terceros, Qualoom realiza la monitorización,
+            alarmado, administración y evolución de los servicios estrella de la
+            compañia española.
           </p>
           <button className="oprtunidad">Ver oportunidad</button>
         </div>

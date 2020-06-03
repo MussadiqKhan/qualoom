@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
+p {
+  line-height: 32.3px;
+}
 nav {
   display: flex;
   width: 100%;
@@ -49,7 +51,7 @@ ul li:hover {
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 845px) {
   nav {
     display: block;
   }
