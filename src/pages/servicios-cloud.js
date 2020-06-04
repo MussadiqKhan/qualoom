@@ -7,7 +7,7 @@ import "../styles/style.css"
 
 const Empleo = () => {
   const data = useStaticQuery(graphql`
-    query Images_empleo {
+    query Images_servicios {
       image: file(relativePath: { eq: "icono-empleo.png" }) {
         id
         childImageSharp {
