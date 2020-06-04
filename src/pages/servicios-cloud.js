@@ -21,7 +21,7 @@ const Empleo = () => {
   return (
     <div>
       <div
-        className="background-empleo"
+        className="background-servicios"
         style={{
           background: `url(../images/cabecera-empleo.jpg)`,
         }}
