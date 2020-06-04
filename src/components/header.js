@@ -29,7 +29,9 @@ const Header = () => {
           <div className="logo_large">
             <img src={logo} />
           </div>
-          <li>Consultoría IT</li>
+          <Link to="/consultoria-it">
+            <li>Consultoría IT</li>
+          </Link>
           <li>Servicios Cloud</li>
           <Link to="/bigdata-analytics/">
             <li>Bigdata & Analytics</li>
@@ -40,7 +42,9 @@ const Header = () => {
           <Link to="/empleo">
             <li>Empleo</li>
           </Link>
-          <li>Compañía</li>
+          <Link to="/compania">
+            <li>Compañía</li>
+          </Link>
           <li>Actualidad</li>
           <Link to="/iot-robotica">
             <li>IoT & Robótica software</li>

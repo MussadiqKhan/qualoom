@@ -15,34 +15,39 @@ const Footer = () => {
         <div className="logo_div">
           <img src={logo} width="100" />
         </div>
-        <div className="company">
-          <ul>
-            <li>
-              <h3>Compañía</h3>
-            </li>
-            <li>Sobre nosotros</li>
-            <li>Nuestro equipo</li>
-            <li>Seguridad y</li>
-            <li>Certificaciones</li>
-          </ul>
-        </div>
+        <Link to="/compania">
+          <div className="company">
+            <ul>
+              <li>
+                <h3>Compañía</h3>
+              </li>
+              <li>Sobre nosotros</li>
+              <li>Nuestro equipo</li>
+              <li>Seguridad y</li>
+              <li>Certificaciones</li>
+            </ul>
+          </div>
+        </Link>
+
         <div className="solutions">
           <ul>
             <li>
               <h3>Soluciones</h3>
             </li>
-            <li>
-              <h4>Consultoría IT</h4>
-            </li>
-            <li>Transformación digital</li>
-            <li>Optimización de arquitecturas</li>
-            <li>Alta disponibilidad y escalabilidad</li>
-            <li>DevOps, SysOps y</li>
-            <li>SysAdmins</li>
-            <li>Planes de contingencia y recuperación</li>
-            <li>Pruebas de estrés</li>
-            <li>Auditoría de sistemas</li>
-            <li>Soporte 24x7</li>
+            <Link to="/consultoria-it">
+              <li>
+                <h4>Consultoría IT</h4>
+              </li>
+              <li>Transformación digital</li>
+              <li>Optimización de arquitecturas</li>
+              <li>Alta disponibilidad y escalabilidad</li>
+              <li>DevOps, SysOps y</li>
+              <li>SysAdmins</li>
+              <li>Planes de contingencia y recuperación</li>
+              <li>Pruebas de estrés</li>
+              <li>Auditoría de sistemas</li>
+              <li>Soporte 24x7</li>
+            </Link>
             <li>
               <h4>Soluciones Cloud</h4>
             </li>

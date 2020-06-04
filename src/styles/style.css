@@ -166,6 +166,91 @@
   width: 150px;
 }
 
+/* Compania */
+.background-compania {
+  max-height: 90vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-compania:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(101, 62, 137, 0.92);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Consultia */
+.background-consultia {
+  max-height: 75vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-consultia:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(61, 58, 45, 0.92);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.consultia-section-1 {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
+}
+.consultia-main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.consultia-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.consultia-text {
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+  word-wrap: break-word;
+  max-width: 350px;
+  flex-basis: 400px;
+}
+.consultia-text p {
+  font-size: 14px;
+  line-height: 23.8px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+}
+.consultia-text h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.consultia-images {
+  width: 100px;
+  height: 100%;
+  margin-right: 10px;
+}
 @media screen and (max-width: 980px) {
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;
@@ -214,5 +299,17 @@
   }
   .empleo-text {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .consultia-content {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .consultia-section-1 {
+    margin-bottom: 40px;
+  }
+  .consultia-main {
+    margin-top: 40px;
   }
 }
