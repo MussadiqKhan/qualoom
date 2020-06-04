@@ -23,7 +23,7 @@ const Empleo = () => {
       <div
         className="background-servicios"
         style={{
-          background: `url(../images/cabecera-empleo.jpg)`,
+          background: `url(../images/servicios-cloud-qualoom.jpg)`,
         }}
       >
         <div className="header_div">
