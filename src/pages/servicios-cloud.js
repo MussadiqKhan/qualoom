@@ -8,11 +8,13 @@ import "../styles/style.css"
 const Empleo = () => {
   const data = useStaticQuery(graphql`
     query Images_servicios {
-      image: file(relativePath: { eq: "icono-empleo.png" }) {
-        id
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+      image: allFile(filter: { relativeDirectory: { eq: "servicios" } }) {
+        nodes {
+          id
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -44,26 +46,32 @@ const Empleo = () => {
           </div>
         </div>
       </div>
-      <div className="empleo-content">
-        <div className="empleo-image">
-          <Img
-            fluid={data.image.childImageSharp.fluid}
-            className="data-image"
-          />
+      <div className="servicios-content">
+        <div>
+          <div className="servicios-text">
+            <h3>Advance Consulting Parnter Amazon Web Services</h3>
+            <p style={{ marginTop: "50px" }}>
+              La administración, gestión, provisión y continuidad de un centro
+              de datos tradicional en determinadas ocasiones es una orientación
+              que puede no encajar con el valor de su organizacicón y estar
+              alejado de los nuevos paradigmas tecnológicos.
+            </p>
+            <br />
+            <p>
+              <b>Qualoom Expertise Technology</b> es <b>Partner Advance</b> con
+              más de 7 años de experiencia en el diseño, implantación y
+              mantenimiento de infraestructuras Cloud en Amazon Web Services.
+            </p>
+          </div>
+          <div className="servicios-image">
+            <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
+          </div>
         </div>
-        <div className="empleo-text">
-          <h2>Perfil Junior Administración de sistemas Línux y BigData</h2>
-          <p>
-            Con una de las infraestructuras Big data más importantes para el
-            análisis de datos, Qualoom se ha convertido en el equipo de
-            administración y operaciones que permite la explotación de tan
-            exigente y dinámica infraestructura. Con tecnología Hadoop,
-            proyectos de explotación de datos e integración con múltiples
-            aplicaciones de terceros, Qualoom realiza la monitorización,
-            alarmado, administración y evolución de los servicios estrella de la
-            compañia española.
-          </p>
-          <button className="oprtunidad">Ver oportunidad</button>
+        <div className="servicios-image-container">
+          <Img
+            fluid={data.image.nodes[2].childImageSharp.fluid}
+            className="servicios-image"
+          />
         </div>
       </div>
       <Footer />

@@ -255,7 +255,7 @@
 /* Servicios CSS */
 
 .background-servicios {
-  max-height: 75vh;
+  max-height: 85vh;
   background-size: cover !important;
   background-position: 100%;
   padding-bottom: 10rem;
@@ -272,6 +272,25 @@
   z-index: 1;
   position: absolute;
 }
+
+.servicios-content {
+  display: flex;
+  justify-content: space-between !important;
+  background-color: #f5f8f9 !important;
+  padding: 100px;
+}
+.servicios-image {
+  width: 350px;
+}
+.servicios-image-container {
+  display: flex;
+}
+.servicios-text {
+  word-break: break-all;
+  word-wrap: break-word;
+  max-width: 500px;
+}
+
 @media screen and (max-width: 980px) {
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;
@@ -332,5 +351,16 @@
   }
   .consultia-main {
     margin-top: 40px;
+  }
+  .servicios-content {
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .servicios-image {
+    width: 300px;
+  }
+  .servicios-image-container {
+    margin-bottom: 40px;
   }
 }
