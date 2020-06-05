@@ -32,15 +32,14 @@ const Empleo = () => {
         <div className="main">
           <div className="empty"></div>
           <div className="text">
-            <h1>¿Te gustaría trabajar con </h1>
-            <h1>nuestro equipo?</h1>
+            <h1>Servicios Cloud</h1>
             <p>
-              Si disfrutas con los grandes retos, deseas desarrollar tu carrera
-              profesional en el sector de la tecnología/consultoría en un
-              entorno innovador y en colaboración con equipos altamente
-              cualificados, este es tu lugar. Ofrecemos un entorno de trabajo
-              saludable, flexible, con desarrollo personal y profesional. ¡Echa
-              un vistazo a nuestras oportunidades!
+              Advance Consulting Partner de Amazon Web Services con más de 7
+              años de experiencia en proyectos de migración a la gran nube,
+              Reseller AWS y miembro del programa de competencias: Digital
+              Customer Experience Competence y Migration/DevOps Competence
+              permiten que cientos de clientes hayan confiado en nosotros para
+              impulsar, asegurar y evolucionar sus servicios.​
             </p>
           </div>
         </div>
