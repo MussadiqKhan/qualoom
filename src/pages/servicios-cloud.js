@@ -70,8 +70,65 @@ const Empleo = () => {
         <div className="servicios-image-container">
           <Img
             fluid={data.image.nodes[2].childImageSharp.fluid}
-            className="servicios-image"
+            className="servicios-image mobile"
           />
+        </div>
+      </div>
+      <h1 style={{ textAlign: "center", marginTop: "80px" }}>
+        Consulta nuestra oferta de servcicios
+      </h1>
+      <div className="servicios-main">
+        <div className="consultia-content">
+          <div className="consultia-section-1">
+            <div className="consultia-images">
+              <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
+            </div>
+            <div className="consultia-text">
+              <h3>Diseño e implementación de arquitetura en Cloud</h3>
+              <p style={{ marginBottom: "20px" }}>
+                Diseñamos y adaptamos la arquitectura de sus aplicaciones de
+                negocio para ayudarle a obtener la máxima disponibilidad y
+                escalabilidad en el menor tiempo posible, tanto si se trata de
+                infraestructuras tradicionales como si ha decidido dar el salto
+                a la nube de Amazon Web Services.
+              </p>
+            </div>
+          </div>
+          <div className="consultia-section-1">
+            <div className="consultia-images">
+              <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+            </div>
+            <div className="consultia-text">
+              <h3>Migración y mantenimiento de infraestructuras híbridas</h3>
+              <p>
+                Le ayudamos a desarrollar y ejecutar el plan de migración más
+                adecuado las necesidades de su orgnaizacón, un plan sólido,
+                consistente y sin riesgos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="video-main">
+        <div className="video-1">
+          <iframe
+            width="470"
+            height="265"
+            src="https://www.youtube.com/embed/bHUwOuxmYIc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="video-2">
+          <iframe
+            width="470"
+            height="265"
+            src="https://www.youtube.com/embed/4Vbtvc5OXz8"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <Footer />

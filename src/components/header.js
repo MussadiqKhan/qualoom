@@ -32,7 +32,9 @@ const Header = () => {
           <Link to="/consultoria-it">
             <li>Consultoría IT</li>
           </Link>
-          <li>Servicios Cloud</li>
+          <Link to="/servicios-cloud">
+            <li>Servicios Cloud</li>
+          </Link>
           <Link to="/bigdata-analytics/">
             <li>Bigdata & Analytics</li>
           </Link>
