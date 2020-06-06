@@ -284,7 +284,7 @@
   padding: 100px 100px 0px 100px;
 }
 .servicios-image {
-  width: 450px;
+  width: 400px;
 }
 .servicios-image-container {
   display: flex;
@@ -305,6 +305,76 @@
   margin-bottom: 20px;
 }
 
+/* Offering */
+
+.background-offering {
+  max-height: 80vh;
+  background-size: cover !important;
+  background-position: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-offering:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(136, 124, 14, 0.83);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+.accordion1 {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.accordion-main {
+  display: flex;
+  flex-direction: column;
+}
+.acc {
+  width: 50%;
+}
+.contacta {
+  margin: 10px 0px 10px 0px;
+  padding: 20px;
+  border-radius: 30px;
+  background: #006ec7;
+  color: white;
+  border: none;
+}
+.text-cards {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.cards-parent {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-image {
+  width: 100px;
+  margin: 0 auto;
+}
+.card {
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.card-heading {
+  margin: 20px 0px;
+}
 @media screen and (max-width: 980px) {
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;
@@ -345,6 +415,9 @@
     flex-direction: column;
     width: 82%;
   }
+  .text-cards {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 850px) {
   .empleo-content {
@@ -356,6 +429,16 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+  .accordion1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .acc {
+    width: 100%;
+  }
   .consultia-content {
     flex-direction: column;
     margin-top: 0px;
@@ -399,6 +482,17 @@
   .video-1 iframe,
   .video-2 iframe {
     width: 400px;
+  }
+  .accordion1 {
+    padding: 0px 10px 0px 50px !important;
+  }
+  .acc {
+    width: 80%;
+  }
+  .text-acc {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 420px) {

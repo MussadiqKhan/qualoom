@@ -21,9 +21,11 @@
     "gatsby-source-filesystem": "^2.3.7",
     "gatsby-transformer-sharp": "^2.5.3",
     "react": "^16.12.0",
+    "react-accessible-accordion": "^3.0.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
-    "react-icons": "^3.10.0"
+    "react-icons": "^3.10.0",
+    "react-script-tag": "^1.1.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"

@@ -51,7 +51,9 @@ const Header = () => {
           <Link to="/iot-robotica">
             <li>IoT & Robótica software</li>
           </Link>
-          <li>Offering!</li>
+          <Link to="/offering">
+            <li>Offering!</li>
+          </Link>
         </ul>
       </nav>
     </div>
