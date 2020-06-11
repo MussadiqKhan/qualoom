@@ -17,7 +17,7 @@ hr {
 .content_wrapper p {
   padding: 15px 0px 15px 0px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .main_third {
     padding: 5rem 2rem 5rem 2rem;
     flex-direction: column;

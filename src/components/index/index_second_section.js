@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "../../styles/index/index_second_section.css"
 
 const IndexSecondSection = () => {
@@ -10,7 +11,9 @@ const IndexSecondSection = () => {
         necesidades tecnológicas de tu organización, disponiendo de un trato
         personalizado.
       </p>
-      <button className="descubre">Descubre más</button>
+      <Link to="/consultoria-it">
+        <button className="descubre">Descubre más</button>
+      </Link>
     </div>
   )
 }

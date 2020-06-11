@@ -1,0 +1,11 @@
+.blog-main-page {
+  background-color: black;
+  padding: 6rem;
+  display: flex;
+}
+ol {
+  list-style: none;
+}
+ol li {
+  padding-bottom: 2rem;
+}

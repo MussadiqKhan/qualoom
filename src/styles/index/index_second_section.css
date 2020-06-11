@@ -23,7 +23,7 @@
 .main_second p {
   padding-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .main_second {
     padding-left: 2rem;
   }

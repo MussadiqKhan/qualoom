@@ -17,18 +17,22 @@ const Header = () => {
     <div className="header">
       <nav>
         <div className="toggle">
-          <div className="logo">
-            <img src={logo} />
-          </div>
+          <Link to="/">
+            <div className="logo">
+              <img src={logo} />
+            </div>
+          </Link>
           <div className="menu" id="menu">
             <GiHamburgerMenu onClick={onClick} />
           </div>
         </div>
 
         <ul id="UL" className={drop ? "active" : ""}>
-          <div className="logo_large">
-            <img src={logo} />
-          </div>
+          <Link to="/">
+            <div className="logo_large">
+              <img src={logo} />
+            </div>
+          </Link>
           <Link to="/consultoria-it">
             <li>Consultoría IT</li>
           </Link>
@@ -47,7 +51,9 @@ const Header = () => {
           <Link to="/compania">
             <li>Compañía</li>
           </Link>
-          <li>Actualidad</li>
+          <Link to="/blog">
+            <li>Blog</li>
+          </Link>
           <Link to="/iot-robotica">
             <li>IoT & Robótica software</li>
           </Link>
