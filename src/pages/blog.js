@@ -12,6 +12,12 @@ export default function BlogPage() {
           node {
             Title
             Slug
+            description
+            featuredImage {
+              file {
+                url
+              }
+            }
             publishedDate(formatString: "MMMM Do, YYYY")
           }
         }
@@ -40,16 +46,34 @@ export default function BlogPage() {
         </div>
       </div>
       <div className="blog-main-page">
-        <ol className="blog-posts">
+        <div className="blog-posts">
           {data.allContentfulBlogPost.edges.map(edge => (
             <Link to={`/blog/${edge.node.Slug}`}>
-              <li>
-                <h2>{edge.node.Title}</h2>
-                <p style={{ fontStyle: "italic" }}>{edge.node.publishedDate}</p>
-              </li>
+              <div className="blog-post">
+                <div className="blog-post-image">
+                  {" "}
+                  {edge.node.featuredImage ? (
+                    <img
+                      src={
+                        edge.node.featuredImage.file.url +
+                        "?fm=jpg&fl=progressive"
+                      }
+                    />
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <div className="blog-post-title">
+                  <h2>{edge.node.Title}</h2>
+                  <p style={{ fontStyle: "italic" }}>
+                    {edge.node.publishedDate}
+                  </p>
+                  <p>{edge.node.description}</p>
+                </div>
+              </div>
             </Link>
           ))}
-        </ol>
+        </div>
       </div>
 
       <Footer />

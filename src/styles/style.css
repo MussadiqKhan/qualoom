@@ -375,6 +375,27 @@
 .card-heading {
   margin: 20px 0px;
 }
+
+/* Interflora css */
+
+.background-interflora {
+  max-height: 95vh;
+  background-size: cover !important;
+  background-position: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+}
+.background-interflora:after {
+  content: "";
+  top: 0;
+  left: 0;
+  background: rgba(114, 66, 100, 0.93);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
 @media screen and (max-width: 980px) {
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;

@@ -109,7 +109,6 @@ const Footer = () => {
             <Link to="/empleo">
               <li>Empleo</li>
             </Link>
-            <li>Actualidad</li>
           </ul>
         </div>
       </div>
@@ -118,7 +117,7 @@ const Footer = () => {
           <ul>
             <li>
               <Link to="/aviso-legal">
-                <b>Avios Legal</b>
+                <b>Aviso Legal</b>
               </Link>
             </li>
             <li>
@@ -137,9 +136,18 @@ const Footer = () => {
           </p>
         </div>
         <div className="social">
-          <AiFillTwitterSquare />
-          <AiFillFacebook />
-          <AiFillLinkedin />
+          <a href="https://twitter.com/qualoom" target="_blank">
+            <AiFillTwitterSquare />
+          </a>
+          <a
+            href="https://www.facebook.com/qualoom.expertise.3"
+            target="_blank"
+          >
+            <AiFillFacebook />
+          </a>
+          <a href="https://www.linkedin.com/company/qualoom/" target="_blank">
+            <AiFillLinkedin />
+          </a>
         </div>
       </div>
     </div>
