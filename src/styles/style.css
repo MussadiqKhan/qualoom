@@ -395,8 +395,43 @@
   z-index: 1;
   position: absolute;
 }
-
+.interflora-section-1 {
+  display: flex;
+  margin: 5em;
+  justify-content: space-around;
+}
+.interflora-section-1 div {
+  width: 500px;
+}
+.interflora-section-1 iframe {
+  margin-top: 10rem;
+}
+.interflora-section-1 img {
+  margin-bottom: 2rem;
+}
+.interflora-section-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+}
+.interflora-section-2 ol li {
+  list-style: circle;
+  padding: 5px;
+}
+.interflora-section-2 ol {
+  margin-bottom: 1rem;
+}
 @media screen and (max-width: 980px) {
+  .interflora-section-1 {
+    flex-direction: column;
+  }
+  .interflora-section-1 div {
+    width: 100%;
+  }
+  .interflora-section-1 iframe {
+    margin-top: 2rem;
+    width: 100%;
+  }
   .casos-content-main {
     margin: 5rem 0rem 5rem 0rem;
     display: flex;
@@ -438,6 +473,12 @@
   }
   .text-cards {
     width: 80%;
+  }
+  .interflora-section-2 {
+    margin: 2em;
+  }
+  .interflora-section-2 img {
+    width: 250px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -519,6 +560,9 @@
 @media screen and (max-width: 420px) {
   .video-main {
     width: 100% !important;
+  }
+  .interflora-section-1 {
+    margin: 1em;
   }
   .video-1 iframe,
   .video-2 iframe {
