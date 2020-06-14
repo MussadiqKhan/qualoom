@@ -80,7 +80,7 @@ const Offering = () => {
         </div>
         <div className="servicios-image-container">
           <Img
-            fluid={data.image.nodes[0].childImageSharp.fluid}
+            fluid={data.image.nodes[1].childImageSharp.fluid}
             className="servicios-image mobile"
           />
         </div>
@@ -151,7 +151,7 @@ const Offering = () => {
         </div>
         <div className="card">
           <Img
-            fluid={data.image.nodes[1].childImageSharp.fluid}
+            fluid={data.image.nodes[0].childImageSharp.fluid}
             className="card-image"
           />
           <p className="card-heading">

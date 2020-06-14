@@ -45,8 +45,8 @@ const Header = () => {
           <Link to="/desarrollo-software">
             <li>Desarrollo software</li>
           </Link>
-          <Link to="/empleo">
-            <li>Empleo</li>
+          <Link to="/offering">
+            <li>Offering</li>
           </Link>
           <Link to="/compania">
             <li>Compañía</li>
@@ -57,8 +57,8 @@ const Header = () => {
           <Link to="/iot-robotica">
             <li>IoT & Robótica software</li>
           </Link>
-          <Link to="/offering">
-            <li>Offering!</li>
+          <Link to="/contacto">
+            <li>Contacto</li>
           </Link>
         </ul>
       </nav>

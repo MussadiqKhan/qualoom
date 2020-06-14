@@ -7,6 +7,7 @@ import IndexFourthSection from "../components/index/index_fourth_section"
 import IndexFifthSection from "../components/index/index_fifth_section"
 import IndexSixthSection from "../components/index/index_sixth_section"
 import IndexSeventhSection from "../components/index/index_seventh_section"
+import ContactForm from "../components/index/contact_form"
 
 export default () => (
   <div>
@@ -17,6 +18,7 @@ export default () => (
     <IndexFifthSection />
     <IndexSixthSection />
     <IndexSeventhSection />
+    <ContactForm />
     <Footer />
   </div>
 )

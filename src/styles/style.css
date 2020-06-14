@@ -252,7 +252,7 @@ button {
 .consultia-images {
   width: 100px;
   height: 100%;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* Servicios CSS */
@@ -444,7 +444,107 @@ button {
   z-index: 1;
   position: absolute;
 }
-
+.contact_form {
+  display: flex;
+  flex-basis: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.contact_form form input {
+  padding: 15px;
+  margin: 19px;
+  border: 1px solid rgb(201, 195, 195);
+  border-radius: 5px;
+}
+.email-name input {
+  width: 36.1% !important;
+}
+.contact_form form input:focus,
+textarea:focus {
+  border: 1px solid rgb(201, 195, 195);
+  outline: none;
+}
+textarea {
+  resize: none;
+  padding: 15px;
+  width: 86% !important;
+  margin-left: 18px !important;
+  margin-top: 19px !important;
+  border: 1px solid rgb(201, 195, 195);
+  border-radius: 5px;
+}
+.legal-check {
+  max-width: 490px !important;
+  margin-top: 20px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.legal-check input {
+  margin-bottom: 5px !important;
+}
+.enviar {
+  padding: 15px;
+  background-color: #006ec7;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+}
+.enviar:focus {
+  outline: none;
+}
+.enviar:hover {
+  background-color: white;
+  border: 1px solid #006ec7;
+  color: black !important;
+}
+.contacto-details {
+  margin-top: 130px;
+}
+.contacto-main {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 810px) {
+  .contacto-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .contacto-details {
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 467px) {
+  textarea {
+    width: 82% !important;
+  }
+  input {
+    width: 82%;
+  }
+  .email-name input {
+    width: 82% !important;
+  }
+  .legal-check input {
+    width: 5%;
+  }
+  .enviar {
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 980px) {
   .interflora-section-1 {
     flex-direction: column;
@@ -494,6 +594,15 @@ button {
     flex-basis: 100% !important;
     flex-direction: column;
     width: 82%;
+  }
+  .servicios-main {
+    padding: 10px 15px 0px 5px;
+  }
+  .servicios-image {
+    width: 200px;
+  }
+  .servicios-content {
+    padding: 50px 50px 0px 50px;
   }
   .text-cards {
     width: 80%;
