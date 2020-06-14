@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import "../../styles/index/index_third_section.css"
 
@@ -34,7 +34,9 @@ const IndexThirdSection = () => {
           evolucionar sus servicios.
         </p>
 
-        <button className="descubre">Descubre más</button>
+        <Link to="/servicios-cloud">
+          <button className="descubre">Descubre más</button>
+        </Link>
       </div>
     </div>
   )

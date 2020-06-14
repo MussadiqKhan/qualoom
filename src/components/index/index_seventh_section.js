@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import "../../styles/index/index_fourth_section.css"
 
@@ -30,7 +30,10 @@ const IndexSeventhSection = () => {
           productivas para entornos domésticos, comerciales e industriales.
         </p>
 
-        <button className="descubre">Descubre más</button>
+        <Link to="iot-robotica">
+          {" "}
+          <button className="descubre">Descubre más</button>
+        </Link>
       </div>
       <div className="image_wrapper_right">
         <Img fluid={data.image.childImageSharp.fluid} />

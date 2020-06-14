@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import "../../styles/index/index_third_section.css"
 
@@ -33,7 +33,10 @@ const IndexSixthSection = () => {
           el día a día en una motivación de mejora y excelencia.
         </p>
 
-        <button className="descubre">Descubre más</button>
+        <Link to="/desarrollo-software">
+          {" "}
+          <button className="descubre">Descubre más</button>
+        </Link>
       </div>
     </div>
   )

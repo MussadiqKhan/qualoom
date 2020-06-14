@@ -88,18 +88,22 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-        <Link to="/casos-de-exito">
-          <div className="Caso">
-            <ul>
-              <li>
-                <h3>Casos de éxito</h3>
-              </li>
+        <div className="Caso">
+          <ul>
+            <li>
+              <h3>Casos de éxito</h3>
+            </li>
+            <Link to="caso-de-exito-interflora">
+              {" "}
               <li>Interflora La Liga</li>
+            </Link>
+            <Link to="/casos-de-exito">
               <li>Profesional</li>
+              <br />
               <li>Telefónica</li>
-            </ul>
-          </div>
-        </Link>
+            </Link>
+          </ul>
+        </div>
         <div className="Resources">
           <ul>
             <li>
