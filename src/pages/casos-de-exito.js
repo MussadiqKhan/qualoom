@@ -20,7 +20,7 @@ const Empleo = () => {
       }
     }
   `)
-  console.log(data)
+  console.log(data.image.nodes[2].childImageSharp.fluid)
   return (
     <div>
       <div
