@@ -66,6 +66,32 @@ class EmpleoForm extends Component {
               permitiendo su crecimiento profesional y personal.
             </li>
           </ol>
+          <h3>Requisitos del perfil</h3>
+          <ol>
+            <li>
+              Se requiere experiencia en administración de sistemas Linux
+              (SysAdmin) .
+            </li>
+            <li>
+              Se requiere experiencia o conocimientos en plataformas BigData
+              (Hadoop y Spark) y herramientas como Airflow, Nifi.
+            </li>
+            <li>Capacidad de análisis y buena comunicación.</li>
+            <li>Ser el catalizador/a del cambio y mejora continua.</li>
+            <li>
+              Fomentar el trabajo auto gestionado ayudando en la toma de
+              decisiones y facilitando la consecución de los objetivos
+              establecidos.
+            </li>
+            <li>
+              Velar porque los integrantes del equipo asimilen la nueva
+              metodología y su implantación sea la óptima.
+            </li>
+            <li>
+              Aportar mejoras contínuas adaptándose a la cultura y el background
+              de cada uno de los equipos.
+            </li>
+          </ol>
         </div>
         <Footer />
       </div>
