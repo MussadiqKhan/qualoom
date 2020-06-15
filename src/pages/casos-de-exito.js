@@ -63,7 +63,9 @@ const Empleo = () => {
               de las divisiones más significativas de la red global de Fleurop
               Inc.
             </p>
-            <button className="descubre">Descubre más</button>
+            <Link to="/caso-de-exito-interflora">
+              <button className="descubre">Descubre más</button>
+            </Link>
           </div>
         </div>
         <div className="casos-image" style={{ marginLeft: "50px" }}>
@@ -89,10 +91,6 @@ const Empleo = () => {
               99.99% a través de nuestro equipo de DevOps, SysOps en Amazon Web
               Services.
             </p>
-            <Link to="/caso-de-exito-interflora">
-              {" "}
-              <button className="descubre">Descubre más</button>
-            </Link>
           </div>
         </div>
       </div>
@@ -112,7 +110,6 @@ const Empleo = () => {
               de las divisiones más significativas de la red global de Fleurop
               Inc.
             </p>
-            <button className="descubre">Descubre más</button>
           </div>
         </div>
         <div className="casos-image" style={{ marginLeft: "50px" }}>
