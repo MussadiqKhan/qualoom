@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { FiExternalLink } from "react-icons/fi"
+import { Link } from "gatsby"
 
 class EmpleoForm extends Component {
   constructor(props) {
@@ -119,7 +121,60 @@ class EmpleoForm extends Component {
             </li>
             <li>Remuneración: Según experiencia y conocimietos aportados</li>
           </ol>
-          <h3>Envíanos tu CV para participar en esta oportunidad</h3>
+          <h3 style={{ marginTop: "80px" }}>
+            Envíanos tu CV para participar en esta oportunidad
+          </h3>
+        </div>
+        <div className="contact_form">
+          <form action="https://formspree.io/mgenybql" method="POST">
+            <div className="email-name">
+              <input type="text" placeholder="Nombre" required name="name" />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                name="_replyto"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Telefono"
+              name="telephone"
+              required
+            />
+
+            <input
+              type="upload"
+              id="file"
+              name="cv"
+              placeholder="Subir CV"
+              required
+            />
+            <input type="text" name="linkedin" placeholder="Perfil Linkedin" />
+            <textarea
+              type="email"
+              rows="10"
+              cols="40"
+              placeholder="Comentarios"
+              name="message"
+            />
+            <span className="legal-check">
+              <input type="checkbox" required />
+              <span>
+                Acepto que Qualoom trate mis datos para tramitar la consulta,
+                resolver mis dudas y ponerse en contacto conmigo. Puedes, en
+                cualquier momento, revocar tu consentimiento o ejercer tus
+                derechos de acceso, rectificación, cancelación, oposición,
+                limitación del tratamiento y portabilidad escribiéndonos a
+                contacto@qualoom.es. Más información en la Política de
+                privacidad.{" "}
+                <Link to="/politica-de-privacidad">
+                  <FiExternalLink style={{ color: "black" }} />
+                </Link>
+              </span>
+            </span>
+            <button className="enviar">Enviar</button>
+          </form>
         </div>
         <Footer />
       </div>
