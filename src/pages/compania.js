@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -23,6 +24,13 @@ const Empleo = () => {
   console.log(data.image.nodes[0].childImageSharp.fluid)
   return (
     <div>
+      <Helmet>
+        <title>Nuestra Empresa - Qualoom</title>
+        <meta
+          name="description"
+          content="Qualoom es una compañía española TI con más de 10 años de experiencia en Soluciones Cloud, BigData & Analytics, Desarrollo de Software, IoT & Robótica."
+        />
+      </Helmet>
       <div
         className="background-compania"
         style={{

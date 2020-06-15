@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import "../styles/legal.css"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -6,6 +7,13 @@ import Footer from "../components/footer"
 const Legal = () => {
   return (
     <div>
+      <Helmet>
+        <title>Aviso Legal - Qualoom</title>
+        <meta
+          name="description"
+          content="Aviso Legal Qualoom - Por encima de todo, claridad y honestidad"
+        />
+      </Helmet>
       <div
         className="background-legal"
         style={{

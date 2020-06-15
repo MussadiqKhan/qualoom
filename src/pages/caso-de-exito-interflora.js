@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import interfloralogo from "../../static/images/logo-interflora.png"
@@ -16,6 +17,17 @@ class Interflora extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>
+            Qualoom realizó para Interflora la migración de su infraestrucuta a
+            la nube y le ofrece un soporte continuo, motivo por el cuál AWS lo
+            publicó como caso de éxito
+          </title>
+          <meta
+            name="description"
+            content="Aviso Legal Qualoom - Por encima de todo, claridad y honestidad"
+          />
+        </Helmet>
         <div
           className="background-interflora"
           style={{

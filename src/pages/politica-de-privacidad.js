@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import "../styles/legal.css"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -6,6 +7,13 @@ import Footer from "../components/footer"
 const Policy = () => {
   return (
     <div>
+      <Helmet>
+        <title>Politica de Privacidad - Qualoom</title>
+        <meta
+          name="description"
+          content="Politica de Privacidad Qualoom- Por encima de todo, claridad y honestidad"
+        />
+      </Helmet>
       <div
         className="background-legal"
         style={{

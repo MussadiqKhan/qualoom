@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -20,6 +21,13 @@ const Empleo = () => {
   `)
   return (
     <div>
+      <Helmet>
+        <title>Trabaja con nosotros en Qualoom</title>
+        <meta
+          name="description"
+          content="Trabaja en Qualoom - Ofrecemos un entorno de trabajo saludable, flexible, con desarrollo personal y profesional. Echa un vistazo a nuestras oportunidades"
+        />
+      </Helmet>
       <div
         className="background-empleo"
         style={{

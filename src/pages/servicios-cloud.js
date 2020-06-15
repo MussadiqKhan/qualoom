@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -22,6 +23,13 @@ const Empleo = () => {
   `)
   return (
     <div>
+      <Helmet>
+        <title>Soluciones y Servicios Cloud - Qualoom</title>
+        <meta
+          name="description"
+          content="Advance Consulting Partner de AWS con competencias DCX Digital Customer Experience Competence, Migration/DevOps Competence y Public Sector (Sector Público)"
+        />
+      </Helmet>
       <div
         className="background-servicios"
         style={{

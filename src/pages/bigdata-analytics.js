@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -22,6 +23,13 @@ const Empleo = () => {
   `)
   return (
     <div>
+      <Helmet>
+        <title>Datos, Bigdata & Analytics - Qualoom</title>
+        <meta
+          name="description"
+          content="El valor del dato es una realidad, pero almacenarlo, explotarlo y ponerlo a disposición en un formato, tiempo y medio adecuado solo está alcance de unos pocos."
+        />
+      </Helmet>
       <div
         className="background-bigdata"
         style={{
@@ -49,7 +57,7 @@ const Empleo = () => {
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
-            fluid={data.image.nodes[2].childImageSharp.fluid}
+            fluid={data.image.nodes[1].childImageSharp.fluid}
             className="data-image"
           />
         </div>
@@ -68,7 +76,7 @@ const Empleo = () => {
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
-            fluid={data.image.nodes[1].childImageSharp.fluid}
+            fluid={data.image.nodes[2].childImageSharp.fluid}
             className="data-image"
           />
         </div>

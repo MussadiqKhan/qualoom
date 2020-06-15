@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, withPrefix, Link } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -32,6 +33,13 @@ const Offering = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Servicio de asesoramiento gratuito - Qualoom</title>
+        <meta
+          name="description"
+          content="Qualoom te ofrece una primera consulta para orientar tu idea, proyecto o migración a la nube. Aprovecha nuestro servicio de asesoramiento gratuito."
+        />
+      </Helmet>
       <div
         className="background-offering"
         style={{
