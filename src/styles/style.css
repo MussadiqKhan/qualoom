@@ -4,9 +4,9 @@ button {
 /* Empleo page css */
 
 .background-empleo {
-  min-height: 95vh;
   background-size: cover !important;
   background-position: 100%;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -509,6 +509,20 @@ textarea {
 .contacto-main {
   display: flex;
   justify-content: space-around;
+}
+.job {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 80%;
+}
+ol {
+  padding-left: 20px;
+}
+ol li {
+  list-style: circle;
 }
 @media screen and (max-width: 810px) {
   .contacto-main {
