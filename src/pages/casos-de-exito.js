@@ -50,7 +50,7 @@ const Empleo = () => {
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-logo">
-            <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
+            <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
           </div>
 
           <div className="casos-text">
