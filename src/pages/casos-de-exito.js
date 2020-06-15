@@ -20,7 +20,7 @@ const Empleo = () => {
       }
     }
   `)
-  console.log(data.image.nodes[0].childImageSharp.fluid)
+  console.log(data.image.nodes[1].childImageSharp.fluid)
   return (
     <div>
       <div
@@ -50,7 +50,7 @@ const Empleo = () => {
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-logo">
-            <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+            <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
           </div>
 
           <div className="casos-text">
