@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
 
 class EmpleoForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (  );
-    }
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+  render() {
+    return <div></div>
+  }
 }
- 
-export default EmpleoForm;
+
+export default EmpleoForm
