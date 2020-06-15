@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/style.css"
@@ -23,6 +24,13 @@ const Empleo = () => {
   console.log(data.image.nodes[2].childImageSharp.fluid)
   return (
     <div>
+      <Helmet>
+        <title>Casos de éxito - Qualoom</title>
+        <meta
+          name="description"
+          content="Nuestra mejor carta de presentación son nuestros clientes: Interflora, Vocento,La Liga o Telefonica entre otros, nuestra marca en quién confiar."
+        />
+      </Helmet>
       <div
         className="background-casos"
         style={{
