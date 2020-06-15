@@ -76,7 +76,7 @@ const Empleo = () => {
         </div>
         <div className="casos-content casos-content-mobile">
           <div className="casos-logo">
-            <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
+            <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
           </div>
 
           <div className="casos-text">
@@ -99,7 +99,7 @@ const Empleo = () => {
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-logo">
-            <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
+            <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
           </div>
 
           <div className="casos-text">
@@ -116,7 +116,7 @@ const Empleo = () => {
           </div>
         </div>
         <div className="casos-image" style={{ marginLeft: "50px" }}>
-          <Img fluid={data.image.nodes[5].childImageSharp.fluid} />
+          <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
         </div>
       </div>
       <Footer />
