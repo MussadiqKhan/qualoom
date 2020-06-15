@@ -34,15 +34,14 @@ const Empleo = () => {
         <div className="main">
           <div className="empty"></div>
           <div className="text">
-            <h1>¿Te gustaría trabajar con </h1>
-            <h1>nuestro equipo?</h1>
+            <h1>Bigdata & Analytics</h1>
             <p>
-              Si disfrutas con los grandes retos, deseas desarrollar tu carrera
-              profesional en el sector de la tecnología/consultoría en un
-              entorno innovador y en colaboración con equipos altamente
-              cualificados, este es tu lugar. Ofrecemos un entorno de trabajo
-              saludable, flexible, con desarrollo personal y profesional. ¡Echa
-              un vistazo a nuestras oportunidades!
+              El valor del dato es una realidad, pero almacenarlo, explotarlo y
+              ponerlo a disposición en un formato, tiempo y medio adecuado solo
+              está alcance de unos pocos. Nuestros servicios te permitirán
+              identificar todos aquellos KPIs que hasta el momento han pasado
+              desapercibidos, preocupándote solo de mejorar tu servicio.
+              Nosotros, de garantizar que tienes los medios.
             </p>
           </div>
         </div>

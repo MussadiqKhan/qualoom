@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery, withPrefix } from "gatsby"
+import { graphql, useStaticQuery, withPrefix, Link } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -98,33 +98,46 @@ const Offering = () => {
             <AccordionItem className="accordion__item">
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  What harsh truths do you prefer to ignore?
+                  MIGRACIÓN AL CLOUD AWS
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel aria-expanded="false">
                 <p>
-                  Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-                  occaecat ut occaecat consequat est minim minim esse tempor
-                  laborum consequat esse adipisicing eu reprehenderit enim.
+                  Como expertos en la materia y{" "}
+                  <b>Partner Advance de Amazon Web Services</b> desde hace más
+                  de 10 años, te invitamos a sacar partido de nuestro de
+                  servicio de offering para adentrarte en un mundo apasionante y
+                  que reducirá tus costes de infraestructura notablemente además
+                  de tener a tu disposición un conjunto de productos y
+                  herramientas que darán a tu negocio la dimensión que necesita.
+                  Consúltanos potenciales plazos, costes estimados de AWs y de
+                  ejecución del proyecto, resolución de potenciales escenarios,
+                  otros
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton>
-                  Is free will real or just an illusion?
+                  DISEÑO Y DESPLIEGUE DE ARQUITECTURA BIG DATA{" "}
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
                 <p>
-                  In ad velit in ex nostrud dolore cupidatat consectetur ea in
-                  ut nostrud velit in irure cillum tempor laboris sed
-                  adipisicing eu esse duis nulla non.
+                  ¿El modelo de ingesta de datos es el correcto? ¿Las etapas de
+                  explotación de datos es la más eficiente? ¿El tipo de servidor
+                  utilizado y el rendimiento me permitirán procesar los datos en
+                  el momento en el que los necesito tener disponible? ¿Cuándo
+                  tiempo podría requerir el diseño y despliegue de un dashboard?
+                  ¿En qué consiste la integración con otros sistemas?
                 </p>
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
-          <button className="contacta">CONTACTA CON NOSOTROS</button>
+          <Link to="/contacto">
+            {" "}
+            <button className="contacta">CONTACTA CON NOSOTROS</button>
+          </Link>
         </div>
       </div>
       <div className="text-cards">
@@ -190,6 +203,59 @@ const Offering = () => {
             Todos nuestros diseños van encaminados a la reducción y contención
             de costes sin que ello implique una pérdida en la calidad del
             servicio
+          </p>
+        </div>
+      </div>
+      <div className="text-cards">
+        <h2>Testimonios</h2>
+      </div>
+      <div className="cards-parent review-parent">
+        <div className="card review">
+          <h3 className="card-heading">
+            <b>Interflora</b>
+          </h3>
+          <p className="card-text" style={{ textAlign: "left" }}>
+            Nuestra experiencia en Interflora con Qualoom fue altamente
+            gratificante. Antes de contratar sus servicios nuestra
+            infraestructura era realmente deficiente y un verdadero lastre para
+            el desarrollo de la empresa, comparar lo que teníamos con lo que
+            tenemos actualmente, es como comparar la noche con el día.
+            <br />
+            Actualmente gracias a Qualoom todos aquellos problemas han quedado
+            en el olvido y ello supone mantener un desarrollo eficaz para
+            nuestra empresa, siempre con la confianza y la seguridad de saber
+            que en caso de ocurrir cualquier problema, por pequeño que sea, los
+            chicos de Qualoom lo solventarán en el menor tiempo posible. <br />{" "}
+            Más allá de contratar un servicio magnífico, también contratamos en
+            función de saber que nos proporcionan un trato personalizado,
+            generando una confianza que dentro de este sector, es lo que nos
+            genera más valor.
+            <br />
+            <br />
+            <i>Gustavo Fernández, CIO</i>
+            <br />
+            <i style={{ color: "blue" }}>https://www.interflora.es/</i>
+          </p>
+        </div>
+        <div className="card review">
+          <h3 className="card-heading">
+            <b>Boston Servicios</b>
+          </h3>
+          <p className="card-text" style={{ textAlign: "left" }}>
+            Boston Medical Group se caracteriza por dar un servicio atento y
+            distinguido a nuestros clientes, un trato altamente personalizado,
+            por ello depositamos en Qualoom el proceso de integrar nuestra
+            infraestructura en la nube. <br /> Consideramos que nuestra
+            asociación con Qualoom fue un paso adelante en nuestro desarrollo y
+            nuestras ambiciones, consolidando nuestra infraestructura en todas
+            las zonas geográficas donde estamos presentes, y siempre con Qualoom
+            como soporte y seguridad de nuestro desarrollo.
+            <br /> <br />
+            <i>Manuel Cerezo, CIO</i>
+            <br />
+            <i style={{ color: "blue" }}>
+              http://www.bostonserviciosmedicos.es/
+            </i>
           </p>
         </div>
       </div>

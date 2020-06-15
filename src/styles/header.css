@@ -51,6 +51,9 @@ ul li:hover {
   justify-content: flex-end;
   align-items: center;
 }
+.active {
+  border-bottom: none !important;
+}
 @media screen and (max-width: 845px) {
   nav {
     display: block;
@@ -67,9 +70,11 @@ ul li:hover {
   ul li {
     display: block;
     text-align: center;
+    padding: 20px;
   }
   .active {
     display: block;
+    border-bottom: none;
   }
   .logo_large {
     display: none;

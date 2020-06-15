@@ -29,7 +29,6 @@ button {
   justify-content: space-between;
 }
 .empleo-text {
-  word-wrap: break-word;
   width: 56%;
 }
 .empleo-image {
@@ -60,9 +59,9 @@ button {
 /* Casos De Exito css */
 
 .background-casos {
-  max-height: 95vh;
   background-size: cover !important;
   background-position: 100%;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -103,10 +102,9 @@ button {
 
 /* Desarrollo Software */
 .background-software {
-  max-height: 95vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -124,10 +122,9 @@ button {
 /* Bigdata */
 
 .background-bigdata {
-  max-height: 95vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -148,10 +145,9 @@ button {
 /* Robotica */
 
 .background-robotica {
-  max-height: 90vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -171,10 +167,9 @@ button {
 
 /* Compania */
 .background-compania {
-  max-height: 90vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -191,10 +186,9 @@ button {
 
 /* Consultia */
 .background-consultia {
-  max-height: 75vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -230,8 +224,7 @@ button {
 .consultia-text {
   display: flex;
   flex-direction: column;
-  word-break: break-all;
-  word-wrap: break-word;
+
   max-width: 350px;
   flex-basis: 400px;
 }
@@ -258,10 +251,9 @@ button {
 /* Servicios CSS */
 
 .background-servicios {
-  max-height: 85vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -293,8 +285,6 @@ button {
   display: flex;
 }
 .servicios-text {
-  word-break: break-all;
-  word-wrap: break-word;
   margin-bottom: 30px;
   margin-right: 20px;
   max-width: 480px;
@@ -311,10 +301,9 @@ button {
 /* Offering */
 
 .background-offering {
-  max-height: 80vh;
   background-size: cover !important;
   background-position: 100%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -356,6 +345,9 @@ button {
   margin: 0 auto;
   margin-top: 80px;
 }
+.review-parent {
+  width: 90% !important;
+}
 .cards-parent {
   width: 80%;
   display: flex;
@@ -367,6 +359,9 @@ button {
 .card-image {
   width: 100px;
   margin: 0 auto;
+}
+.review {
+  width: 500px !important;
 }
 .card {
   width: 350px;
@@ -382,9 +377,9 @@ button {
 /* Interflora css */
 
 .background-interflora {
-  max-height: 95vh;
   background-size: cover !important;
   background-position: 100%;
+  padding-bottom: 5rem;
   position: relative;
   background-repeat: no-repeat !important;
 }
@@ -711,5 +706,10 @@ textarea {
   }
   .servicios-content {
     padding: 50px 50px 0px 50px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .review {
+    width: 100% !important;
   }
 }

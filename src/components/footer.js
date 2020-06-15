@@ -48,13 +48,15 @@ const Footer = () => {
               <li>Auditoría de sistemas</li>
               <li>Soporte 24x7</li>
             </Link>
-            <li>
-              <h4>Soluciones Cloud</h4>
-            </li>
-            <li>Partner Advance AWS Cloud</li>
-            <li>IaaS & PaaS</li>
-            <li>Cloud híbrida</li>
-            <li>Migraciones onpremise</li>
+            <Link to="/servicios-cloud">
+              <li>
+                <h4>Soluciones Cloud</h4>
+              </li>
+              <li>Partner Advance AWS </li>
+              <li>Cloud IaaS & PaaS</li>
+              <li>Cloud híbrida</li>
+              <li>Migraciones onpremise</li>
+            </Link>
             <Link to="/bigdata-analytics">
               <li>
                 <h4>BigData & Analytics</h4>
@@ -95,10 +97,10 @@ const Footer = () => {
             </li>
             <Link to="caso-de-exito-interflora">
               {" "}
-              <li>Interflora La Liga</li>
+              <li>Interflora </li>
             </Link>
             <Link to="/casos-de-exito">
-              <li>Profesional</li>
+              <li>La Liga Profesional</li>
               <br />
               <li>Telefónica</li>
             </Link>
@@ -109,7 +111,10 @@ const Footer = () => {
             <li>
               <h3>Recursos</h3>
             </li>
-            <li>Blog</li>
+            <Link to="/blog">
+              {" "}
+              <li>Blog</li>
+            </Link>
             <Link to="/empleo">
               <li>Empleo</li>
             </Link>
