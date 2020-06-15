@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/blog.css"
@@ -8,6 +9,7 @@ export const query = graphql`
   query($Slug: String!) {
     contentfulBlogPost(Slug: { eq: $Slug }) {
       Title
+      description
       featuredImage {
         file {
           url
@@ -35,6 +37,13 @@ const Post = props => {
 
   return (
     <div>
+      <Helmet>
+        <title>{props.data.contentfulBlogPost.Title}</title>
+        <meta
+          name="description"
+          content={props.data.contentfulBlogPost.description}
+        />
+      </Helmet>
       <div
         className="background-post"
         style={{

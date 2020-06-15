@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -72,7 +72,10 @@ const Empleo = () => {
             alarmado, administración y evolución de los servicios estrella de la
             compañia española.
           </p>
-          <button className="oprtunidad">Ver oportunidad</button>
+          <Link to="/perfil-administracion-de-sistemas-linux-y-bigdata">
+            {" "}
+            <button className="oprtunidad">Ver oportunidad</button>
+          </Link>
         </div>
       </div>
       <Footer />

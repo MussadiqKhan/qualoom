@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Helmet } from "react-helmet"
 import ContactForm from "../components/index/contact_form"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -7,6 +8,13 @@ export class contacto extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Contacto - Qualoom</title>
+          <meta
+            name="description"
+            content="Estaremos encontados de atender tus peticiones. Ponte en contacto con Qualoom."
+          />
+        </Helmet>
         <div
           className="background-contacto"
           style={{

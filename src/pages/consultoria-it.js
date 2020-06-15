@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -23,6 +24,13 @@ const Empleo = () => {
   console.log(data.image.nodes[0].childImageSharp.fluid)
   return (
     <div>
+      <Helmet>
+        <title>Consultoría IT - Qualoom</title>
+        <meta
+          name="description"
+          content="Transformación TI. Diseño de arquitecturas escalables y con alta disponibilidad. DevOps, SysOps y SysAdmin. Planes de contigencia y continuidad ante desastres"
+        />
+      </Helmet>
       <div
         className="background-consultia"
         style={{

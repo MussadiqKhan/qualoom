@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -23,6 +24,13 @@ const Empleo = () => {
   console.log(data.image.nodes[0].childImageSharp.fluid)
   return (
     <div>
+      <Helmet>
+        <title>Desarrollo Software - Qualoom</title>
+        <meta
+          name="description"
+          content="El área de desarrollo de Qualoom especialista en desarrollo backend, frontend y movilidad te permitirá alcanzar tus objetivos"
+        />
+      </Helmet>
       <div
         className="background-software"
         style={{

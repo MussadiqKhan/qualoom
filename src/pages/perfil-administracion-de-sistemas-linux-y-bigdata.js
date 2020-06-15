@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { Helmet } from "react-helmet"
 import { FiExternalLink } from "react-icons/fi"
 import { Link } from "gatsby"
 
@@ -12,7 +13,13 @@ class EmpleoForm extends Component {
   render() {
     return (
       <div>
-        {" "}
+        <Helmet>
+          <title>Perfil Administración de sistemas Línux y BigData</title>
+          <meta
+            name="description"
+            content="Trabaja en Qualoom - Ofrecemos un entorno de trabajo saludable, flexible, con desarrollo personal y profesional. Echa un vistazo a nuestras oportunidades"
+          />
+        </Helmet>{" "}
         <div
           className="background-empleo"
           style={{
