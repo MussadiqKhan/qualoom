@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -89,7 +89,10 @@ const Empleo = () => {
               99.99% a través de nuestro equipo de DevOps, SysOps en Amazon Web
               Services.
             </p>
-            <button className="descubre">Descubre más</button>
+            <Link to="/caso-de-exito-interflora">
+              {" "}
+              <button className="descubre">Descubre más</button>
+            </Link>
           </div>
         </div>
       </div>
