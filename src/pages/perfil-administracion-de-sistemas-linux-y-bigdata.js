@@ -92,6 +92,34 @@ class EmpleoForm extends Component {
               de cada uno de los equipos.
             </li>
           </ol>
+          <h3>Te ofrecemos</h3>
+          <ol>
+            <li>
+              El reto de participar en proyectos innovadores de entornos de
+              sistemas y Bigdata para importante cliente
+            </li>
+            <li>
+              Colaborar con equipos multidisciplinares obteniendo una visión 360
+              de la compañía y clientes
+            </li>
+            <li>Certificaciones y formación</li>
+            <li>
+              Trabajo con grandes profesionales y en equipos multidisciplinares.
+            </li>
+            <li>Plan de carrera adecuado a tus necesidades.</li>
+            <li>
+              Contrato estable: por obra y servicio hasta el 01/01/2021 con alta
+              probabilidad de renovación tras 5 años con este modelo
+            </li>
+            <li>
+              Algo que seguro no podrás rechazar. Trabajar en la zona sur de
+              Madrid (Móstoles), con las ventajas que esto conlleva, posibilidad
+              de ir a comer casa, tiempo de transporte al trabajo apenas
+              existente.
+            </li>
+            <li>Remuneración: Según experiencia y conocimietos aportados</li>
+          </ol>
+          <h3>Envíanos tu CV para participar en esta oportunidad</h3>
         </div>
         <Footer />
       </div>
