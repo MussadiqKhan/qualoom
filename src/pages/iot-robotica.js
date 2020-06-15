@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -22,6 +23,13 @@ const Empleo = () => {
   `)
   return (
     <div>
+      <Helmet>
+        <title>IoT & Robótica software - Qualoom</title>
+        <meta
+          name="description"
+          content="A través de nuestro equipo de IoT y Robótica desarrollamos proyectos profesionales a medida."
+        />
+      </Helmet>
       <div
         className="background-robotica"
         style={{

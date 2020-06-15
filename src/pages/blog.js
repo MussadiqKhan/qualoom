@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import { Helmet } from "react-helmet"
+
 import Header from "../components/header"
 import Footer from "../components/footer"
 import "../styles/blog.css"
@@ -27,6 +29,13 @@ export default function BlogPage() {
   console.log(data)
   return (
     <div>
+      <Helmet>
+        <title>Nuestro Blog - Qualoom</title>
+        <meta
+          name="description"
+          content="Actualidad Qualoom. Todas las noticias y novedades que te pueden resultar de interés y queremos compartir contigo y tu organización"
+        />
+      </Helmet>
       <div
         className="background-casos"
         style={{
