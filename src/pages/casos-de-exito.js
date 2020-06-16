@@ -108,7 +108,7 @@ const Empleo = () => {
             <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
           </div>
 
-          <div className="casos-text">
+          <div className="casos-text ">
             <p style={{ marginBottom: "20px" }}>
               Qualoom ha sido el partner español de Amazon Web Services (AWS)
               seleccionado por Fleurop Interflora España S.A. para realizar la
