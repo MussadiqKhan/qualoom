@@ -6,6 +6,12 @@
 ol {
   list-style: none;
 }
+.post ul {
+  display: inline !important;
+}
+.post ul li {
+  padding: 0px;
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -92,6 +98,9 @@ p {
   .blog-main-page {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  ul li {
+    text-align: left !important;
   }
 }
 @media screen and (max-width: 768px) {
