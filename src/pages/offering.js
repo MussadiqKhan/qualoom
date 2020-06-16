@@ -94,11 +94,11 @@ const Offering = () => {
         </div>
       </div>
       <div className="accordion1">
-        <div className="text-acc">
+        <div className="text-acc" style={{ marginRight: "50px" }}>
           <h2>En qué podemos ayudarte</h2>
           <p>
-            Podemos ayudar a tu proyecto de diferentes formas. Te exponemos unos
-            ejemplos.
+            Podemos ayudar a tu proyecto de diferentes formas.
+            <br /> Te exponemos unos ejemplos.
           </p>
         </div>
         <div className="acc">

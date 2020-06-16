@@ -279,15 +279,16 @@ button {
   padding: 100px 100px 0px 100px;
 }
 .servicios-image {
-  width: 400px;
+  width: 300px;
+  object-fit: contain !important;
 }
 .servicios-image-container {
-  display: flex;
+  width: 300px;
 }
 .servicios-text {
   margin-bottom: 30px;
   margin-right: 20px;
-  max-width: 480px;
+  max-width: 1200px;
 }
 .video-main {
   width: 80%;
