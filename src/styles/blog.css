@@ -18,6 +18,13 @@ ol {
   padding: 0px;
   display: list-item !important;
 }
+.post ol {
+  display: list-item !important;
+}
+.post ol li {
+  padding: 0px !important;
+  list-style-type: decimal !important;
+}
 .post li {
 }
 .pagination {
