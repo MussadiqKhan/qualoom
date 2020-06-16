@@ -58,7 +58,7 @@ const Empleo = () => {
         <div className="consultia-content">
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[6].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Asesoramiento en procesos de transformación IT</h3>
@@ -75,7 +75,7 @@ const Empleo = () => {
           </div>
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[1].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[5].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Optimización de infraestructuras y aplicaciones</h3>
@@ -92,7 +92,7 @@ const Empleo = () => {
         <div className="consultia-content">
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[8].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>
@@ -111,7 +111,7 @@ const Empleo = () => {
           </div>
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[7].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Pruebas de estrés y tolerancia a fallos</h3>
@@ -131,7 +131,7 @@ const Empleo = () => {
         <div className="consultia-content">
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[5].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>DevOps, SysOps y SysAdmin</h3>
@@ -144,7 +144,7 @@ const Empleo = () => {
           </div>
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[6].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Diseño planes de contigencia y continuidad ante desastres</h3>
@@ -161,7 +161,7 @@ const Empleo = () => {
         <div className="consultia-content">
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[7].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Auditoría de sistemas</h3>
@@ -175,7 +175,7 @@ const Empleo = () => {
           </div>
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[8].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Tiempo de respuesta inferior a 1 hora. SLAs</h3>
