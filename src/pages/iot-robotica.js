@@ -57,7 +57,7 @@ const Empleo = () => {
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
-            fluid={data.image.nodes[1].childImageSharp.fluid}
+            fluid={data.image.nodes[0].childImageSharp.fluid}
             className="robotica-image"
           />
         </div>
@@ -75,7 +75,7 @@ const Empleo = () => {
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
-            fluid={data.image.nodes[0].childImageSharp.fluid}
+            fluid={data.image.nodes[1].childImageSharp.fluid}
             className="robotica-image"
           />
         </div>
