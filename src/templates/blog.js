@@ -29,11 +29,16 @@ const Post = props => {
         const alt = node.data.target.fields.title["en-US"]
         const url =
           node.data.target.fields.file["en-US"].url + "?fm=jpg&fl=progressive"
-        return <img alt={alt} src={url} />
+        return (
+          <img
+            alt={alt}
+            src={url}
+            style={{ width: "300px", height: "300px" }}
+          />
+        )
       },
     },
   }
-  console.log(props)
 
   return (
     <div>
