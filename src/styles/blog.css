@@ -9,6 +9,10 @@ ol {
 .post ul {
   display: inline !important;
 }
+.post ul li:hover {
+  color: black !important;
+  cursor: initial !important;
+}
 .post ul li {
   padding: 0px;
 }
