@@ -7,14 +7,18 @@ ol {
   list-style: none;
 }
 .post ul {
-  display: inline !important;
+  display: list-item !important;
 }
 .post ul li:hover {
   color: black !important;
   cursor: initial !important;
 }
 .post ul li {
+  list-style: inherit !important;
   padding: 0px;
+  display: list-item !important;
+}
+.post li {
 }
 .pagination {
   display: flex;
