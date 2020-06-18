@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -31,32 +32,29 @@ const Empleo = () => {
           content="El área de desarrollo de Qualoom especialista en desarrollo backend, frontend y movilidad te permitirá alcanzar tus objetivos"
         />
       </Helmet>
-      <div
-        className="background-software"
-        style={{
-          background: `url(../images/d-desarrollo-software-qualoom-2.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Desarrollo Software</h1>
+      <BackgroundImage fluid={data.image.nodes[1].childImageSharp.fluid}>
+        <div className="background-software">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Desarrollo Software</h1>
 
-            <h1></h1>
-            <p>
-              Una idea, un nuevo proyecto, un proyecto que no acaba de arrancar
-              debido a una deuda tecnológica insalvable. El área de desarrollo
-              de Qualoom especialistas en desarrollo backend, frontend y
-              movilidad te permitirá alcanzar tus objetivos conviertiendo los
-              problemas en retos y el día a día en una motivación de mejora y
-              excelencia.
-            </p>
+              <h1></h1>
+              <p>
+                Una idea, un nuevo proyecto, un proyecto que no acaba de
+                arrancar debido a una deuda tecnológica insalvable. El área de
+                desarrollo de Qualoom especialistas en desarrollo backend,
+                frontend y movilidad te permitirá alcanzar tus objetivos
+                conviertiendo los problemas en retos y el día a día en una
+                motivación de mejora y excelencia.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-text">

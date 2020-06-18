@@ -62,6 +62,7 @@ button {
   content: "";
   top: 0;
   left: 0;
+  padding-bottom: 5rem;
   background: rgba(92, 110, 1, 0.93);
   width: 100%;
   height: 100%;
@@ -92,22 +93,15 @@ button {
 }
 
 /* Desarrollo Software */
+
 .background-software {
-  background-size: cover !important;
-  background-position: 100%;
-  padding-bottom: 5rem;
-  position: relative;
-  background-repeat: no-repeat !important;
-}
-.background-software:after {
   content: "";
+  padding-bottom: 5rem;
   top: 0;
   left: 0;
   background: rgba(35, 45, 68, 0.85);
   width: 100%;
   height: 100%;
-  z-index: 1;
-  position: absolute;
 }
 
 /* Bigdata */
@@ -172,6 +166,7 @@ button {
   content: "";
   top: 0;
   left: 0;
+  padding-bottom: 5rem;
   background: rgba(61, 58, 45, 0.92);
   width: 100%;
   height: 100%;
@@ -225,21 +220,14 @@ button {
 /* Servicios CSS */
 
 .background-servicios {
-  background-size: cover !important;
-  background-position: 100%;
-  padding-bottom: 5rem;
-  position: relative;
-  background-repeat: no-repeat !important;
-}
-.background-servicios:after {
   content: "";
   top: 0;
   left: 0;
   background: rgba(14, 79, 136, 0.93);
   width: 100%;
+  padding-bottom: 5rem;
+
   height: 100%;
-  z-index: 1;
-  position: absolute;
 }
 .servicios-main {
   padding: 100px 100px 0px 100px;
