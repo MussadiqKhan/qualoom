@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, withPrefix, Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -40,30 +41,27 @@ const Offering = () => {
           content="Qualoom te ofrece una primera consulta para orientar tu idea, proyecto o migración a la nube. Aprovecha nuestro servicio de asesoramiento gratuito."
         />
       </Helmet>
-      <div
-        className="background-offering"
-        style={{
-          background: `url(../images/seguridad-y-certificaiciones-qualoom.png)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Servicio de asesoramiento gratuito</h1>
-            <p>
-              Necesitas una primera consulta para conocer la mejor orientación a
-              tu idea o proyecto. Estás pensando en realizar una migración a la
-              nube y no tiene clara la estrategía ni los activos de tu
-              organización que se verán afectados. Aprovéchate de nuestro
-              servicio de asesoramiento gratuito destinado al arranque de este
-              tipo de proyectos.
-            </p>
+      <BackgroundImage fluid={data.image.nodes[5].childImageSharp.fluid}>
+        <div className="background-offering">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Servicio de asesoramiento gratuito</h1>
+              <p>
+                Necesitas una primera consulta para conocer la mejor orientación
+                a tu idea o proyecto. Estás pensando en realizar una migración a
+                la nube y no tiene clara la estrategía ni los activos de tu
+                organización que se verán afectados. Aprovéchate de nuestro
+                servicio de asesoramiento gratuito destinado al arranque de este
+                tipo de proyectos.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="servicios-content">
         <div>
           <div className="servicios-text">
