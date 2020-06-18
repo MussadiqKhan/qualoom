@@ -10,7 +10,10 @@ import "../styles/style.css"
 const Empleo = () => {
   const data = useStaticQuery(graphql`
     query Images_servicios {
-      image: allFile(filter: { relativeDirectory: { eq: "servicios" } }) {
+      image: allFile(
+        filter: { relativeDirectory: { eq: "servicios" } }
+        sort: { fields: size, order: ASC }
+      ) {
         nodes {
           id
           childImageSharp {
@@ -70,12 +73,12 @@ const Empleo = () => {
             </p>
           </div>
           <div className="servicios-image">
-            <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
+            <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
           </div>
         </div>
         <div className="servicios-image-container">
           <Img
-            fluid={data.image.nodes[0].childImageSharp.fluid}
+            fluid={data.image.nodes[3].childImageSharp.fluid}
             className="servicios-image mobile"
           />
         </div>
@@ -102,7 +105,7 @@ const Empleo = () => {
           </div>
           <div className="consultia-section-1">
             <div className="consultia-images">
-              <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
+              <Img fluid={data.image.nodes[0].childImageSharp.fluid} />
             </div>
             <div className="consultia-text">
               <h3>Migración y mantenimiento de infraestructuras híbridas</h3>

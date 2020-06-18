@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -30,30 +31,26 @@ const Empleo = () => {
           content="A través de nuestro equipo de IoT y Robótica desarrollamos proyectos profesionales a medida."
         />
       </Helmet>
-      <div
-        className="background-robotica"
-        style={{
-          background: `url(../images/iot-robotica-software-1.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>IoT & Robótica software</h1>
-            <p>
-              El futuro ya es presente y uno de nuestros objetivos es ser
-              protagonistas. A través de nuestro equipo de IoT y Robótica
-              participamos en la nueva revolución industrial gracias a las
-              herramientas disponibles en la gran nube (Amazon Web Services y
-              Microsoft) así como en desarrollos profesionales a medida.
-            </p>
+      <BackgroundImage fluid={data.image.nodes[2].childImageSharp.fluid}>
+        <div className="background-robotica">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>IoT & Robótica software</h1>
+              <p>
+                El futuro ya es presente y uno de nuestros objetivos es ser
+                protagonistas. A través de nuestro equipo de IoT y Robótica
+                participamos en la nueva revolución industrial gracias a las
+                herramientas disponibles en la gran nube (Amazon Web Services y
+                Microsoft) así como en desarrollos profesionales a medida.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-
+      </BackgroundImage>
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
