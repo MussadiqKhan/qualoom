@@ -10,7 +10,10 @@ import "../styles/style.css"
 const Empleo = () => {
   const data = useStaticQuery(graphql`
     query Images_software {
-      image: allFile(filter: { relativeDirectory: { eq: "software" } }) {
+      image: allFile(
+        filter: { relativeDirectory: { eq: "software" } }
+        sort: { fields: size, order: ASC }
+      ) {
         nodes {
           id
           childImageSharp {
