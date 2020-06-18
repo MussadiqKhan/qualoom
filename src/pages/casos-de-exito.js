@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
@@ -33,30 +34,27 @@ const Empleo = () => {
           content="Nuestra mejor carta de presentación son nuestros clientes: Interflora, Vocento,La Liga o Telefonica entre otros, nuestra marca en quién confiar."
         />
       </Helmet>
-      <div
-        className="background-casos"
-        style={{
-          background: `url(../images/a-qualoom-home.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Casos de éxito. Nuestra mejor</h1>
-            <h1>carta de presentación son</h1>
-            <h1>nuestros clientes</h1>
-            <p>
-              Somos una empresa que invierte muy poco en publicidad y
-              posicionamiento. La confianza de nuestros socios y clientes, así
-              como la recomendación de nuestra marca es la mejor carta de
-              presentación.
-            </p>
+      <BackgroundImage fluid={data.image.nodes[6].childImageSharp.fluid}>
+        <div className="background-casos">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Casos de éxito. Nuestra mejor</h1>
+              <h1>carta de presentación son</h1>
+              <h1>nuestros clientes</h1>
+              <p>
+                Somos una empresa que invierte muy poco en publicidad y
+                posicionamiento. La confianza de nuestros socios y clientes, así
+                como la recomendación de nuestra marca es la mejor carta de
+                presentación.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-logo">

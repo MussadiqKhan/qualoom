@@ -1,4 +1,5 @@
 import React from "react"
+import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
@@ -30,30 +31,27 @@ const Empleo = () => {
           content="El valor del dato es una realidad, pero almacenarlo, explotarlo y ponerlo a disposición en un formato, tiempo y medio adecuado solo está alcance de unos pocos."
         />
       </Helmet>
-      <div
-        className="background-bigdata"
-        style={{
-          background: `url(../images/big-data-analytcis-qualoom.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Bigdata & Analytics</h1>
-            <p>
-              El valor del dato es una realidad, pero almacenarlo, explotarlo y
-              ponerlo a disposición en un formato, tiempo y medio adecuado solo
-              está alcance de unos pocos. Nuestros servicios te permitirán
-              identificar todos aquellos KPIs que hasta el momento han pasado
-              desapercibidos, preocupándote solo de mejorar tu servicio.
-              Nosotros, de garantizar que tienes los medios.
-            </p>
+      <BackgroundImage fluid={data.image.nodes[3].childImageSharp.fluid}>
+        <div className="background-bigdata">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Bigdata & Analytics</h1>
+              <p>
+                El valor del dato es una realidad, pero almacenarlo, explotarlo
+                y ponerlo a disposición en un formato, tiempo y medio adecuado
+                solo está alcance de unos pocos. Nuestros servicios te
+                permitirán identificar todos aquellos KPIs que hasta el momento
+                han pasado desapercibidos, preocupándote solo de mejorar tu
+                servicio. Nosotros, de garantizar que tienes los medios.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="empleo-content">
         <div className="empleo-image">
           <Img

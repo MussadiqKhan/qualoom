@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { Helmet } from "react-helmet"
 import { withPrefix, Link } from "gatsby"
 import logo from "../../static/images/logo_qualoom_blanco.png"
+import "../templates/blog-list-template"
 
 const Header = () => {
   const [drop, setDrop] = useState(false)
@@ -57,6 +58,7 @@ const Header = () => {
           <Link to="/iot-robotica">
             <li>IoT & Robótica software</li>
           </Link>
+
           <Link to="/contacto">
             <li>Contacto</li>
           </Link>

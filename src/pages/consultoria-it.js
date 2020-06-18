@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -31,29 +32,26 @@ const Empleo = () => {
           content="Transformación TI. Diseño de arquitecturas escalables y con alta disponibilidad. DevOps, SysOps y SysAdmin. Planes de contigencia y continuidad ante desastres"
         />
       </Helmet>
-      <div
-        className="background-consultia"
-        style={{
-          background: `url(../images/consultoria-it-qualoom.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Consultoría IT</h1>
+      <BackgroundImage fluid={data.image.nodes[9].childImageSharp.fluid}>
+        <div className="background-consultia">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Consultoría IT</h1>
 
-            <h1></h1>
-            <p>
-              El área de las tecnologías de la información es nuestro ecosistema
-              nativo. Podemos ayudarte a alcanzar los retos que tu organización
-              estableza y siempre con un trato personalizado.
-            </p>
+              <h1></h1>
+              <p>
+                El área de las tecnologías de la información es nuestro
+                ecosistema nativo. Podemos ayudarte a alcanzar los retos que tu
+                organización estableza y siempre con un trato personalizado.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="consultia-main">
         <div className="consultia-content">
           <div className="consultia-section-1">
