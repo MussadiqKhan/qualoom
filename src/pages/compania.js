@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Header from "../components/header"
@@ -31,31 +32,28 @@ const Empleo = () => {
           content="Qualoom es una compañía española TI con más de 10 años de experiencia en Soluciones Cloud, BigData & Analytics, Desarrollo de Software, IoT & Robótica."
         />
       </Helmet>
-      <div
-        className="background-compania"
-        style={{
-          background: `url(../images/a-qualoom-home.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>Descubre una nueva manera de innovar</h1>
+      <BackgroundImage fluid={data.image.nodes[3].childImageSharp.fluid}>
+        <div className="background-compania">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>Descubre una nueva manera de innovar</h1>
 
-            <h1></h1>
-            <p>
-              Qualoom Expertise Technology es una compañía española del sector
-              de las tecnologías de la información con más de 10 años de
-              experiencia que desarrolla su actividad en el ámbito de la
-              Consultoría IT, Soluciones Cloud, BigData & Analytics, Desarrollo
-              de Software, IoT & Robótica Software.
-            </p>
+              <h1></h1>
+              <p>
+                Qualoom Expertise Technology es una compañía española del sector
+                de las tecnologías de la información con más de 10 años de
+                experiencia que desarrolla su actividad en el ámbito de la
+                Consultoría IT, Soluciones Cloud, BigData & Analytics,
+                Desarrollo de Software, IoT & Robótica Software.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="casos-content-main">
         <div className="casos-content">
           <div className="casos-text">
