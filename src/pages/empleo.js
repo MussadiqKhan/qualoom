@@ -1,6 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, useStaticQuery, Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
+
 import Img from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -10,6 +12,14 @@ const Empleo = () => {
   const data = useStaticQuery(graphql`
     query Images_empleo {
       image: file(relativePath: { eq: "icono-empleo.png" }) {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image1: file(relativePath: { eq: "cabecera-empleo.jpg" }) {
         id
         childImageSharp {
           fluid {
@@ -28,31 +38,28 @@ const Empleo = () => {
           content="Trabaja en Qualoom - Ofrecemos un entorno de trabajo saludable, flexible, con desarrollo personal y profesional. Echa un vistazo a nuestras oportunidades"
         />
       </Helmet>
-      <div
-        className="background-empleo"
-        style={{
-          background: `url(../images/cabecera-empleo.jpg)`,
-        }}
-      >
-        <div className="header_div">
-          <Header />
-        </div>
-        <div className="main">
-          <div className="empty"></div>
-          <div className="text">
-            <h1>¿Te gustaría trabajar con </h1>
-            <h1>nuestro equipo?</h1>
-            <p>
-              Si disfrutas con los grandes retos, deseas desarrollar tu carrera
-              profesional en el sector de la tecnología/consultoría en un
-              entorno innovador y en colaboración con equipos altamente
-              cualificados, este es tu lugar. Ofrecemos un entorno de trabajo
-              saludable, flexible, con desarrollo personal y profesional. ¡Echa
-              un vistazo a nuestras oportunidades!
-            </p>
+      <BackgroundImage fluid={data.image1.childImageSharp.fluid}>
+        <div className="background-empleo">
+          <div className="header_div">
+            <Header />
+          </div>
+          <div className="main">
+            <div className="empty"></div>
+            <div className="text">
+              <h1>¿Te gustaría trabajar con </h1>
+              <h1>nuestro equipo?</h1>
+              <p>
+                Si disfrutas con los grandes retos, deseas desarrollar tu
+                carrera profesional en el sector de la tecnología/consultoría en
+                un entorno innovador y en colaboración con equipos altamente
+                cualificados, este es tu lugar. Ofrecemos un entorno de trabajo
+                saludable, flexible, con desarrollo personal y profesional.
+                ¡Echa un vistazo a nuestras oportunidades!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </BackgroundImage>
       <div className="empleo-content">
         <div className="empleo-image">
           <Img
