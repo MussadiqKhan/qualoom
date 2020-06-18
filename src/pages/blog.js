@@ -37,7 +37,7 @@ export default function BlogPage() {
         />
       </Helmet>
       <div
-        className="background-casos"
+        className="background-offering"
         style={{
           background: `url(../images/a-qualoom-home.jpg)`,
         }}
