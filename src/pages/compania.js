@@ -10,7 +10,10 @@ import "../styles/style.css"
 const Empleo = () => {
   const data = useStaticQuery(graphql`
     query Images_compania {
-      image: allFile(filter: { relativeDirectory: { eq: "compania" } }) {
+      image: allFile(
+        filter: { relativeDirectory: { eq: "compania" } }
+        sort: { fields: size, order: ASC }
+      ) {
         nodes {
           id
           childImageSharp {
@@ -22,7 +25,6 @@ const Empleo = () => {
       }
     }
   `)
-  console.log(data.image.nodes[0].childImageSharp.fluid)
   return (
     <div>
       <Helmet>
@@ -32,7 +34,7 @@ const Empleo = () => {
           content="Qualoom es una compañía española TI con más de 10 años de experiencia en Soluciones Cloud, BigData & Analytics, Desarrollo de Software, IoT & Robótica."
         />
       </Helmet>
-      <BackgroundImage fluid={data.image.nodes[3].childImageSharp.fluid}>
+      <BackgroundImage fluid={data.image.nodes[2].childImageSharp.fluid}>
         <div className="background-compania">
           <div className="header_div">
             <Header />
@@ -73,7 +75,7 @@ const Empleo = () => {
           </div>
         </div>
         <div className="casos-image" style={{ marginLeft: "50px" }}>
-          <Img fluid={data.image.nodes[2].childImageSharp.fluid} />
+          <Img fluid={data.image.nodes[3].childImageSharp.fluid} />
         </div>
       </div>
       <div className="casos-content-main reverse">
