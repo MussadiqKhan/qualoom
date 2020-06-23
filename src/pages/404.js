@@ -1,16 +1,17 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Page404 = () => {
   return (
-    <div>
-      <div class="section">
-        <h1 class="error">404</h1>
-        <div class="page">
+    <div className="main-404">
+      <div className="section">
+        <h1 className="error">404</h1>
+        <div className="page">
           Ooops!!! The page you are looking for is not found
         </div>
-        <a class="back-home" href="#!">
+        <Link className="back-home" to="/">
           Back to home
-        </a>
+        </Link>
       </div>
     </div>
   )
