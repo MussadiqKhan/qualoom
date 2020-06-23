@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "../styles/styles.css"
 
 const Page404 = () => {
   return (
